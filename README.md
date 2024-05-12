@@ -37,6 +37,11 @@ For the asynchronous script, use:
 python async_main.py
 ```
 
+## Configuration
+- Obtain Reddit API (PRAW) Key
+- Obtain OpenAI API Key
+- Choose specific subreddits of choices (e.g. clinicaltrials, clinicalresearch, clintrials)
+
 ## Methodology
 This project uses the Reddit API to collect posts and comments, which are then analyzed using sentiment analysis techniques to determine the tone towards clinical trials, health, and medicine in general. The main.py script performs synchronous processing, while async_main.py uses asynchronous calls for efficiency.
 
@@ -48,7 +53,7 @@ This project uses the Reddit API to collect posts and comments, which are then a
 ## Examples
 ### Data Collected
  - A post's title, text, and comments are analyzed using sentiment analysis. After, promising posts are responded to using an OpenAI prompt.
- - Example message generated:
+### Example message generated:
 
 Dear [User],
 
