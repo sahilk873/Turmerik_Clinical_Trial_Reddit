@@ -5,7 +5,7 @@ from typing import List, Dict
 from sentiment_analysis import perform_sentiment_analysis_textblob, perform_sentiment_analysis_vader
 
 # Configuration and instance creation
-openai.api_key = 'sk-proj-SIhTnSKO9NOetMBgGySxT3BlbkFJ3KKoGkEoODeFtO6AEp97'
+openai.api_key = 'API KEY'
 reddit = praw.Reddit(
     client_id='fyBsGjSbqFgv-0BYJDafqA',
     client_secret='2hFFqOXt5aJ4jx5ibVdYE1jp0DpwHA',
