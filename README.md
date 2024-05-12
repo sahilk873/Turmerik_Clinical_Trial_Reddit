@@ -3,9 +3,22 @@
 ## Setup Instructions
 
 ### Prerequisites
-Ensure you have Python 3.8 or higher installed on your machine.
 
-### Dependencies
+- Python 3.8 or higher
+- Required Python libraries (see Installation)
+
+### Installation
+
+1. Clone the repository or download the source code.
+2. Navigate to the project directory.
+3. Create a virtual environment (optional but recommended):
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+```
+
+### Installation of Dependancies
 Install the required Python libraries using:
 
 ```bash
