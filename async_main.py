@@ -6,7 +6,7 @@ from typing import List, Dict
 from sentiment_analysis import perform_sentiment_analysis_textblob, perform_sentiment_analysis_vader
 
 # Configuration
-openai.api_key = 'sk-proj-SIhTnSKO9NOetMBgGySxT3BlbkFJ3KKoGkEoODeFtO6AEp97'  # Consider securely managing the API key
+openai.api_key = 'API KEY'  # Consider securely managing the API key
 reddit = asyncpraw.Reddit(
     client_id='fyBsGjSbqFgv-0BYJDafqA',
     client_secret='2hFFqOXt5aJ4jx5ibVdYE1jp0DpwHA',
@@ -45,7 +45,7 @@ async def generate_personalized_messages(posts: List[Dict]) -> List[Dict]:
     return posts
 
 async def qualified(posts):
-    return [post for post in posts if post['sentiment_vader'] > 0.5 and post['sentiment_textblob'] > 0.5]
+    return [post for post in posts if post['sentiment_vader'] > 0.5 and post['sentiment_textblob'] > -0.2]
 
 async def assign_sentiment(posts):
     text_blb_sentiment = perform_sentiment_analysis_textblob(posts)
